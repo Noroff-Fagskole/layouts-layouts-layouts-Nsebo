@@ -1,0 +1,115 @@
+:root {
+  --brand-dark-gray: #f0f0f0;
+  --brand-gray: ##f6f6f6;
+  --brand-turquoise: #c5f5fa;
+  --brand-white: #fff;
+  --brand-black: #000;
+  --brand-red: #ff5b5a;
+  --container-width: 1170px;
+  --gutter: 20px;
+  --gutter-sml: 10px;
+  ..default-font-family: ;
+}
+
+body {
+  background-color: white;
+}
+
+img {
+  width: 100%;
+}
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+.app-header {
+  background-color: var(--brand-light-gray);
+  padding-top: var(--gutter);
+}
+.app-header .row:nth-child(1),
+.app-header .row:nth-child(2) {
+  padding-bottom: var(--gutter);
+}
+.app-header .row:nth-child(3) {
+  padding-bottom: var(--gutter-sml);
+}
+.flex-it {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.account-nav ul,
+.main-navigation ul,
+.bread-crumb-ol,
+.product-nav li {
+  list-style: none;
+}
+
+.account-nav li,
+.main-navigation li,
+.bread-crumb li,
+.product-nav ul {
+  display: inline-block;
+}
+.logo {
+  width: 122px;
+}
+.app-body {
+  background-color: var(--brand-white);
+}
+.bread-crumb {
+  padding: var(--gutter);
+}
+.product .column:nth-child(2) {
+  background-color: var(--brand-turquoise);
+}
+.app-footer {
+  background-color: var(--brand-black);
+}
+
+/*.product .flex-it {
+  display: flex;
+  justify-content: space-between;
+}*/
+.product.flex-it .column,
+.product-description flex-it .column {
+  /*width: 50%;*/
+  flex-basis: 50%;
+}
+
+.product-description .column {
+  min-height: 444px;
+}
+
+.product-description .column:nth-child(2) {
+  background-color: var(--brand-turquoise);
+}
+
+a:link,
+a:visited {
+  color: var(--brand-black);
+  text-decoration: none;
+}
+.search form {
+  position: relative;
+}
+
+.search-form label {
+  display: none;
+}
+.search-form input {
+  width: 100%;
+  padding: var(--gutter-sml);
+}
+
+.search-form button {
+  position: absolute;
+  top: var(--gutter-sml);
+  left: var(--gutter-sml);
+}
+
+@media screen and (min-width: 768px) {
+  .flex-it {
+    flex-direction: row;
+  }
+}
