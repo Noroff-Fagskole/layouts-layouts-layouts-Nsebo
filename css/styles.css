@@ -15,34 +15,41 @@
 
 body {
   background-color: white;
+  font-family: var(--default-font-family);
 }
 
 img {
   width: 100%;
 }
+
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
 }
+
 .app-header {
   background-color: var(--brand-light-gray);
   padding-top: var(--gutter);
 }
+
 .app-header .row:nth-child(1),
 .app-header .row:nth-child(2) {
   padding-bottom: var(--gutter);
 }
+
 .app-header .row:nth-child(3) {
   padding-bottom: var(--gutter-sml);
 }
+
 .flex-it {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
+
 .account-nav ul,
 .main-navigation ul,
-.bread-crumb-ol,
+.bread-crumb ol,
 .product-nav li {
   list-style: none;
 }
@@ -53,43 +60,43 @@ img {
 .product-nav ul {
   display: inline-block;
 }
+
 .logo {
   width: 122px;
 }
+
 .app-body {
   background-color: var(--brand-white);
 }
+
 .bread-crumb {
   padding: var(--gutter);
 }
-.product .column:nth-child(2) {
-  background-color: var(--brand-turquoise);
-}
-.app-footer {
-  background-color: var(--brand-black);
-}
-.bread-crumb {
-  padding: var(--gutter);
-}
+
 
 .bread-crumb li:after{
   content: '>';
   padding-left: var(--gutter-sml);
-  padding-rigt: var(--gutter-sml);
+  padding-right: var(--gutter-sml);
 }
 
 .bread-crumb li:last-child:after{
-  content: '>';
+  content: '🚀';
 }
 
 /*.product .flex-it {
   display: flex;
   justify-content: space-between;
 }*/
+
 .product.flex-it .column,
-.product-description flex-it .column {
+.product-description.flex-it .column {
   /*width: 50%;*/
   flex-basis: 50%;
+}
+
+.product .column:nth-child(2) {
+  background-color: var(--brand-turquoise);
 }
 
 .product-description .column {
@@ -98,6 +105,10 @@ img {
 
 .product-description .column:nth-child(2) {
   background-color: var(--brand-turquoise);
+}
+
+.app-footer {
+  background-color: var(--brand-black);
 }
 
 a:link,
@@ -115,6 +126,8 @@ a:visited {
 .search-form input {
   width: 100%;
   padding: var(--gutter-sml);
+  padding-left: 70px;
+  border: 1px solid var(--brand-dark-gray);
 }
 
 .search-form button {
